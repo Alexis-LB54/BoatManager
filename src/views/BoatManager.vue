@@ -53,7 +53,6 @@ export default {
     };
   },
   components: {
-
   },
   computed: {
     ...mapWritableState(AllBoat, ["list"]),
@@ -61,7 +60,7 @@ export default {
   methods: {
     LoveCash(boat) {
       console.log(boat);
-      let error = "format of your data is not accepted";
+      let error = "Format of your data is not accepted";
       if (
         typeof this.boat.name === "string" &&
         this.boat.size > 0 &&
@@ -72,7 +71,7 @@ export default {
           this.list.push(boat);
           this.$router.push("/dashboard");
       }
-      return
+      else {alert(error)}
     },
   },
 };

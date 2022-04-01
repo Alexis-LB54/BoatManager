@@ -24,9 +24,6 @@ export default {
 computed: {
       ...mapState(AllBoat, ['getList'])
 },
-methods: {
-  
-},
 };
 </script>
 
