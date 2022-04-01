@@ -8,14 +8,7 @@ export const AllBoat = defineStore({
     ],
   }),
   getters: {
-    getList: (state) => state.list,
-    getAnnualIncome: (state) => {
-        let total = 0;
-        state.list.map( (item : {price: number}) => {
-          total = (item.price * 12)
-        })
-        return total
-      },
+    getList: (state) => state.list
   },
   actions: {
     increment() {

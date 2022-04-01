@@ -22,7 +22,7 @@ import { AllBoat } from "../stores/boat";
 import { mapState, mapWritableState } from "pinia";
 export default {
 computed: {
-      ...mapState(AllBoat, ['getList', 'getAnnualIncome'])
+      ...mapState(AllBoat, ['getList'])
 },
 methods: {
   

@@ -37,7 +37,6 @@
 </template>
 
 <script>
-import BoatList from "../components/BoatList.vue";
 import { AllBoat } from "../stores/boat";
 import { mapState, mapWritableState } from "pinia";
 import { useRouter, useRoute } from "vue-router";
@@ -54,7 +53,7 @@ export default {
     };
   },
   components: {
-    BoatList,
+
   },
   computed: {
     ...mapWritableState(AllBoat, ["list"]),
